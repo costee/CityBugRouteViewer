@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A7344BE1BD64BF800F342F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7344BD1BD64BF800F342F6 /* AppDelegate.swift */; };
+		4A7344C01BD64BF800F342F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7344BF1BD64BF800F342F6 /* ViewController.swift */; };
+		4A7344C21BD64BF800F342F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A7344C11BD64BF800F342F6 /* Assets.xcassets */; };
+		4A7344C51BD64BF800F342F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7344C31BD64BF800F342F6 /* Main.storyboard */; };
+		4A7344D01BD64BF800F342F6 /* CityBug_Route_ViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7344CF1BD64BF800F342F6 /* CityBug_Route_ViewerTests.swift */; };
+		4A7344DB1BD64BF800F342F6 /* CityBug_Route_ViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7344DA1BD64BF800F342F6 /* CityBug_Route_ViewerUITests.swift */; };
+		4A9AD5FC1BD663210085D95A /* CBMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9AD5FA1BD663210085D95A /* CBMapViewController.swift */; };
+		4A9AD5FF1BD665700085D95A /* CBWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9AD5FE1BD665700085D95A /* CBWindowController.swift */; };
+		4A9AD6021BD667960085D95A /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9AD6001BD667960085D95A /* Realm.framework */; };
+		4A9AD6031BD667960085D95A /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9AD6001BD667960085D95A /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A9AD6041BD667960085D95A /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9AD6011BD667960085D95A /* RealmSwift.framework */; };
+		4A9AD6051BD667960085D95A /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9AD6011BD667960085D95A /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A9AD60A1BD67AF00085D95A /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9AD6081BD67AF00085D95A /* Route.swift */; };
+		4A9AD60B1BD67AF00085D95A /* RouteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9AD6091BD67AF00085D95A /* RouteStore.swift */; };
+		4A9AD60E1BD69FC40085D95A /* GPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9AD60D1BD69FC40085D95A /* GPX.swift */; };
+		4A9AD6141BD771E10085D95A /* CBSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9AD6131BD771E10085D95A /* CBSetupViewController.swift */; };
+		4AA1E6831BDA9805002C5823 /* GPXHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA1E6821BDA9805002C5823 /* GPXHelper.swift */; };
+		4AF79B181BDBFF58007D8406 /* MeetingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF79B171BDBFF58007D8406 /* MeetingPoint.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A7344CC1BD64BF800F342F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A7344B21BD64BF800F342F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A7344B91BD64BF800F342F6;
+			remoteInfo = "CityBug Route Viewer";
+		};
+		4A7344D71BD64BF800F342F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A7344B21BD64BF800F342F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A7344B91BD64BF800F342F6;
+			remoteInfo = "CityBug Route Viewer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A9AD6061BD667960085D95A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A9AD6051BD667960085D95A /* RealmSwift.framework in Embed Frameworks */,
+				4A9AD6031BD667960085D95A /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A7344BA1BD64BF800F342F6 /* CityBug Route Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CityBug Route Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7344BD1BD64BF800F342F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A7344BF1BD64BF800F342F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A7344C11BD64BF800F342F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A7344C41BD64BF800F342F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A7344C61BD64BF800F342F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A7344CB1BD64BF800F342F6 /* CityBug Route ViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CityBug Route ViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7344CF1BD64BF800F342F6 /* CityBug_Route_ViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityBug_Route_ViewerTests.swift; sourceTree = "<group>"; };
+		4A7344D11BD64BF800F342F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A7344D61BD64BF800F342F6 /* CityBug Route ViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CityBug Route ViewerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7344DA1BD64BF800F342F6 /* CityBug_Route_ViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityBug_Route_ViewerUITests.swift; sourceTree = "<group>"; };
+		4A7344DC1BD64BF800F342F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A9AD5FA1BD663210085D95A /* CBMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBMapViewController.swift; sourceTree = "<group>"; };
+		4A9AD5FE1BD665700085D95A /* CBWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBWindowController.swift; sourceTree = "<group>"; };
+		4A9AD6001BD667960085D95A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		4A9AD6011BD667960085D95A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		4A9AD6081BD67AF00085D95A /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		4A9AD6091BD67AF00085D95A /* RouteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteStore.swift; sourceTree = "<group>"; };
+		4A9AD60D1BD69FC40085D95A /* GPX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPX.swift; sourceTree = "<group>"; };
+		4A9AD6131BD771E10085D95A /* CBSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBSetupViewController.swift; sourceTree = "<group>"; };
+		4AA1E6821BDA9805002C5823 /* GPXHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXHelper.swift; sourceTree = "<group>"; };
+		4AF79B171BDBFF58007D8406 /* MeetingPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingPoint.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A7344B71BD64BF800F342F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9AD6041BD667960085D95A /* RealmSwift.framework in Frameworks */,
+				4A9AD6021BD667960085D95A /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7344C81BD64BF800F342F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7344D31BD64BF800F342F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A7344B11BD64BF800F342F6 = {
+			isa = PBXGroup;
+			children = (
+				4A9AD6001BD667960085D95A /* Realm.framework */,
+				4A9AD6011BD667960085D95A /* RealmSwift.framework */,
+				4A7344BC1BD64BF800F342F6 /* CityBug Route Viewer */,
+				4A7344CE1BD64BF800F342F6 /* CityBug Route ViewerTests */,
+				4A7344D91BD64BF800F342F6 /* CityBug Route ViewerUITests */,
+				4A7344BB1BD64BF800F342F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A7344BB1BD64BF800F342F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A7344BA1BD64BF800F342F6 /* CityBug Route Viewer.app */,
+				4A7344CB1BD64BF800F342F6 /* CityBug Route ViewerTests.xctest */,
+				4A7344D61BD64BF800F342F6 /* CityBug Route ViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A7344BC1BD64BF800F342F6 /* CityBug Route Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				4A7344BD1BD64BF800F342F6 /* AppDelegate.swift */,
+				4A9AD5FE1BD665700085D95A /* CBWindowController.swift */,
+				4A7344BF1BD64BF800F342F6 /* ViewController.swift */,
+				4A7344C11BD64BF800F342F6 /* Assets.xcassets */,
+				4A7344C31BD64BF800F342F6 /* Main.storyboard */,
+				4A9AD6131BD771E10085D95A /* CBSetupViewController.swift */,
+				4AA1E6821BDA9805002C5823 /* GPXHelper.swift */,
+				4A9AD5FA1BD663210085D95A /* CBMapViewController.swift */,
+				4AF79B171BDBFF58007D8406 /* MeetingPoint.swift */,
+				4A7344C61BD64BF800F342F6 /* Info.plist */,
+				4A9AD6081BD67AF00085D95A /* Route.swift */,
+				4A9AD6091BD67AF00085D95A /* RouteStore.swift */,
+				4A9AD60D1BD69FC40085D95A /* GPX.swift */,
+			);
+			path = "CityBug Route Viewer";
+			sourceTree = "<group>";
+		};
+		4A7344CE1BD64BF800F342F6 /* CityBug Route ViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A7344CF1BD64BF800F342F6 /* CityBug_Route_ViewerTests.swift */,
+				4A7344D11BD64BF800F342F6 /* Info.plist */,
+			);
+			path = "CityBug Route ViewerTests";
+			sourceTree = "<group>";
+		};
+		4A7344D91BD64BF800F342F6 /* CityBug Route ViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A7344DA1BD64BF800F342F6 /* CityBug_Route_ViewerUITests.swift */,
+				4A7344DC1BD64BF800F342F6 /* Info.plist */,
+			);
+			path = "CityBug Route ViewerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A7344B91BD64BF800F342F6 /* CityBug Route Viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A7344DF1BD64BF800F342F6 /* Build configuration list for PBXNativeTarget "CityBug Route Viewer" */;
+			buildPhases = (
+				4A7344B61BD64BF800F342F6 /* Sources */,
+				4A7344B71BD64BF800F342F6 /* Frameworks */,
+				4A7344B81BD64BF800F342F6 /* Resources */,
+				4A9AD6061BD667960085D95A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CityBug Route Viewer";
+			productName = "CityBug Route Viewer";
+			productReference = 4A7344BA1BD64BF800F342F6 /* CityBug Route Viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A7344CA1BD64BF800F342F6 /* CityBug Route ViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A7344E21BD64BF800F342F6 /* Build configuration list for PBXNativeTarget "CityBug Route ViewerTests" */;
+			buildPhases = (
+				4A7344C71BD64BF800F342F6 /* Sources */,
+				4A7344C81BD64BF800F342F6 /* Frameworks */,
+				4A7344C91BD64BF800F342F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A7344CD1BD64BF800F342F6 /* PBXTargetDependency */,
+			);
+			name = "CityBug Route ViewerTests";
+			productName = "CityBug Route ViewerTests";
+			productReference = 4A7344CB1BD64BF800F342F6 /* CityBug Route ViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A7344D51BD64BF800F342F6 /* CityBug Route ViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A7344E51BD64BF800F342F6 /* Build configuration list for PBXNativeTarget "CityBug Route ViewerUITests" */;
+			buildPhases = (
+				4A7344D21BD64BF800F342F6 /* Sources */,
+				4A7344D31BD64BF800F342F6 /* Frameworks */,
+				4A7344D41BD64BF800F342F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A7344D81BD64BF800F342F6 /* PBXTargetDependency */,
+			);
+			name = "CityBug Route ViewerUITests";
+			productName = "CityBug Route ViewerUITests";
+			productReference = 4A7344D61BD64BF800F342F6 /* CityBug Route ViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A7344B21BD64BF800F342F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Nagy Konstantin";
+				TargetAttributes = {
+					4A7344B91BD64BF800F342F6 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					4A7344CA1BD64BF800F342F6 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 4A7344B91BD64BF800F342F6;
+					};
+					4A7344D51BD64BF800F342F6 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 4A7344B91BD64BF800F342F6;
+					};
+				};
+			};
+			buildConfigurationList = 4A7344B51BD64BF800F342F6 /* Build configuration list for PBXProject "CityBug Route Viewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A7344B11BD64BF800F342F6;
+			productRefGroup = 4A7344BB1BD64BF800F342F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A7344B91BD64BF800F342F6 /* CityBug Route Viewer */,
+				4A7344CA1BD64BF800F342F6 /* CityBug Route ViewerTests */,
+				4A7344D51BD64BF800F342F6 /* CityBug Route ViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A7344B81BD64BF800F342F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A7344C21BD64BF800F342F6 /* Assets.xcassets in Resources */,
+				4A7344C51BD64BF800F342F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7344C91BD64BF800F342F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7344D41BD64BF800F342F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A7344B61BD64BF800F342F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF79B181BDBFF58007D8406 /* MeetingPoint.swift in Sources */,
+				4A9AD5FF1BD665700085D95A /* CBWindowController.swift in Sources */,
+				4A9AD60B1BD67AF00085D95A /* RouteStore.swift in Sources */,
+				4A7344C01BD64BF800F342F6 /* ViewController.swift in Sources */,
+				4A9AD6141BD771E10085D95A /* CBSetupViewController.swift in Sources */,
+				4A9AD60E1BD69FC40085D95A /* GPX.swift in Sources */,
+				4A9AD5FC1BD663210085D95A /* CBMapViewController.swift in Sources */,
+				4A9AD60A1BD67AF00085D95A /* Route.swift in Sources */,
+				4AA1E6831BDA9805002C5823 /* GPXHelper.swift in Sources */,
+				4A7344BE1BD64BF800F342F6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7344C71BD64BF800F342F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A7344D01BD64BF800F342F6 /* CityBug_Route_ViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A7344D21BD64BF800F342F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A7344DB1BD64BF800F342F6 /* CityBug_Route_ViewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A7344CD1BD64BF800F342F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A7344B91BD64BF800F342F6 /* CityBug Route Viewer */;
+			targetProxy = 4A7344CC1BD64BF800F342F6 /* PBXContainerItemProxy */;
+		};
+		4A7344D81BD64BF800F342F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A7344B91BD64BF800F342F6 /* CityBug Route Viewer */;
+			targetProxy = 4A7344D71BD64BF800F342F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A7344C31BD64BF800F342F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A7344C41BD64BF800F342F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A7344DD1BD64BF800F342F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A7344DE1BD64BF800F342F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4A7344E01BD64BF800F342F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "CityBug Route Viewer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.costee.CityBug-Route-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A7344E11BD64BF800F342F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "CityBug Route Viewer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.costee.CityBug-Route-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4A7344E31BD64BF800F342F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				INFOPLIST_FILE = "CityBug Route ViewerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.costee.CityBug-Route-ViewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CityBug Route Viewer.app/Contents/MacOS/CityBug Route Viewer";
+			};
+			name = Debug;
+		};
+		4A7344E41BD64BF800F342F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				INFOPLIST_FILE = "CityBug Route ViewerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.costee.CityBug-Route-ViewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CityBug Route Viewer.app/Contents/MacOS/CityBug Route Viewer";
+			};
+			name = Release;
+		};
+		4A7344E61BD64BF800F342F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "CityBug Route ViewerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.costee.CityBug-Route-ViewerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "CityBug Route Viewer";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4A7344E71BD64BF800F342F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "CityBug Route ViewerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.costee.CityBug-Route-ViewerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "CityBug Route Viewer";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A7344B51BD64BF800F342F6 /* Build configuration list for PBXProject "CityBug Route Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A7344DD1BD64BF800F342F6 /* Debug */,
+				4A7344DE1BD64BF800F342F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A7344DF1BD64BF800F342F6 /* Build configuration list for PBXNativeTarget "CityBug Route Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A7344E01BD64BF800F342F6 /* Debug */,
+				4A7344E11BD64BF800F342F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A7344E21BD64BF800F342F6 /* Build configuration list for PBXNativeTarget "CityBug Route ViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A7344E31BD64BF800F342F6 /* Debug */,
+				4A7344E41BD64BF800F342F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A7344E51BD64BF800F342F6 /* Build configuration list for PBXNativeTarget "CityBug Route ViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A7344E61BD64BF800F342F6 /* Debug */,
+				4A7344E71BD64BF800F342F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A7344B21BD64BF800F342F6 /* Project object */;
+}
